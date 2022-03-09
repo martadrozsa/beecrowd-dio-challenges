@@ -13,13 +13,14 @@ public class Chess {
 
         int[][] chess = new int[L][C];
 
-        for (int i = 0; i < chess.length; i++) {
-            for (int j = 0; j < chess.length; j++){
+        for (int i = 0; i < L; i++) {
+            for (int j = 0; j < C; j++){
                 if (i % 2 == 0) {
                     if (j % 2 == 0) {
                         chess[i][j] = 1;
                     }
-                } else {
+                }
+                else {
                     if (j % 2 != 0) {
                         chess[i][j] = 1;
                     }
@@ -27,19 +28,7 @@ public class Chess {
             }
         }
 
-//        for (int i = 0; i < chess.length; i++) {
-//            for (int j = 0; j < chess.length; j++) {
-//                System.out.print(chess[i][j]);
-//            }
-//            System.out.println();
-//        }
-
-       int position = chess[L - 1][C - 1] ;
-        for (int i = 0; i < chess.length; i++) {
-            for (int j = 0; j < chess.length; j++){
-                chess[i][j] = position;
-            }
-        }
+        int position = chess[L - 1][C - 1] ;
         System.out.print(position);
 
         sc.close();
