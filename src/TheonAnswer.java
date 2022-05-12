@@ -23,5 +23,6 @@ public class TheonAnswer {
         }
         int position = index + 1;
         System.out.println(position);
+        sc.close();
     }
 }
